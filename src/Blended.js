@@ -8,6 +8,7 @@ import './assets/main.scss';
 
 import HeaderOne from './common/header/HeaderOne';
 import About from './component/about/About.js';
+import PricingFive from './component/pricing/PricingFive';
 
 const Blended = () => {
   useEffect(() => {
@@ -21,6 +22,11 @@ const Blended = () => {
     <Router>
       <HeaderOne/>
       <About/>
+      <div className="rwt-pricing-area rn-section-gap">
+        <div className="container">
+          <PricingFive />
+        </div>
+      </div>
     </Router>
   );
 }

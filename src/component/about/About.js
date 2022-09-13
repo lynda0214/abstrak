@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="fancy-text-block-nineteen mb-200 md-mb-150">
+    <div className="fancy-text-block-nineteen mb-200 md-mb-150" style={{ backgroundColor: 'white' }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
@@ -16,7 +16,7 @@ const About = () => {
                 Over <span>150,000+ client</span>
               </div>
               <div className="title-style-five">
-                <h2>
+                <h2 style={{ color: 'black' }}>
                   <span>Best event & online</span> ticket platform.
                 </h2>
               </div>
