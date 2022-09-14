@@ -30,7 +30,7 @@ const Blogs = () => {
                 <div className="hover-overlay">
                   <img
                     className="img-fluid"
-                    src="/images/blog/post-1-img.jpg"
+                    src={process.env.PUBLIC_URL + "/images/blog/post-1-img.jpg"}
                     alt="blog-post-image"
                   />
                   <div className="item-overlay" />
@@ -68,7 +68,7 @@ const Blogs = () => {
                 <div className="hover-overlay">
                   <img
                     className="img-fluid"
-                    src="/images/blog/post-5-img.jpg"
+                    src={process.env.PUBLIC_URL + "/images/blog/post-5-img.jpg"}
                     alt="blog-post-image"
                   />
                   <div className="item-overlay" />
@@ -106,7 +106,7 @@ const Blogs = () => {
                 <div className="hover-overlay">
                   <img
                     className="img-fluid"
-                    src="/images/blog/post-2-img.jpg"
+                    src={process.env.PUBLIC_URL + "/images/blog/post-2-img.jpg"}
                     alt="blog-post-image"
                   />
                   <div className="item-overlay" />
