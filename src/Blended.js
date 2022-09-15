@@ -20,6 +20,8 @@ const Blended = () => {
     <>
       <Separater title="Abstrak <HeaderOne>" />
       <HeaderOne />
+      <Separater title="OLMO <Blogs>" />
+      <Blogs />
       <Separater title="Deski <About>" />
       <About />
       <Separater title="Doob <PricingFive>" />
@@ -28,8 +30,6 @@ const Blended = () => {
           <PricingFive />
         </div>
       </div>
-      <Separater title="OLMO <Blogs>" />
-      <Blogs />
     </>
   );
 }

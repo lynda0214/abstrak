@@ -28,7 +28,7 @@ const BlogGridView = () => {
                 <HeaderOne />
                 <BreadCrumbOne 
                 title={detailsMagazine.title}
-                page="Blog"
+                page="Magazine"
                 />
                 <div className="section-padding-equal">
                     <div className="container">

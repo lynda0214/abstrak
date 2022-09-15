@@ -62,7 +62,7 @@ const BlogDetails = () => {
                 <HeaderOne />
                 <BreadCrumbOne 
                 title={detailsBlog.title}
-                page="Blog"
+                page="Article"
                 />
                 <div className="section-padding-equal">
                     <div className="container">
