@@ -42,7 +42,7 @@ const Blogs = () => {
                 <p className="p-md post-tag">OLMO News  |  June 12, 2021</p>
                 {/* Post Link */}
                 <h5 className="h5-md">
-                  <Link to="/single-post">
+                  <Link to="/blog-grid/">
                     <a>Integer urna turpis donec ipsum a porta justo auctor</a>
                   </Link>
                 </h5>
@@ -80,7 +80,7 @@ const Blogs = () => {
                 <p className="p-md post-tag">Tutorials  |  June 3, 2021</p>
                 {/* Post Link */}
                 <h5 className="h5-md">
-                  <Link to="/single-post">
+                  <Link to="/blog-grid/">
                     <a>A ligula risus auctor tempus</a>
                   </Link>
                 </h5>
@@ -118,7 +118,7 @@ const Blogs = () => {
                 <p className="p-md post-tag">Inspiration  |  May 18, 2021</p>
                 {/* Post Link */}
                 <h5 className="h5-md">
-                  <Link to="/single-post">
+                  <Link to="/blog-grid/">
                     <a>
                       Donec sapien augue integer turpis at cursus porta mauris
                     </a>

@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/app.scss';
 import './assets/main.scss';
-import "./styles/globals.css";
+import './styles/globals.css';
 
 import HeaderOne from './common/header/HeaderOne';
 import About from './component/about/About.js';
@@ -16,28 +16,21 @@ const Separater = ({ title }) => <div
   style={{ background: 'crimson', color: 'white', fontWeight: 'bold', textAlign: 'center' }}>{title}</div>;
 
 const Blended = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
-  window.addEventListener("load", AOS.refresh);
-
   return (
-    <Router>
-      <Separater title="Abstrak <HeaderOne>"/>
-      <HeaderOne/>
-      <Separater title="Deski <About>"/>
-      <About/>
-      <Separater title="Doob <PricingFive>"/>
+    <>
+      <Separater title="Abstrak <HeaderOne>" />
+      <HeaderOne />
+      <Separater title="Deski <About>" />
+      <About />
+      <Separater title="Doob <PricingFive>" />
       <div className="rwt-pricing-area rn-section-gap">
         <div className="container">
           <PricingFive />
         </div>
       </div>
-      <Separater title="OLMO <Blogs>"/>
-      <Blogs/>
-    </Router>
+      <Separater title="OLMO <Blogs>" />
+      <Blogs />
+    </>
   );
 }
 

@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
 // import Showcase from './Showcase';
-import Blended from './Blended';
+// import Blended from './Blended';
+import Nested from './Nested';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Blended />
+    <Nested />
   </React.StrictMode>,
   document.getElementById('root')
 );
