@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import FooterOne from '../common/footer/FooterOne';
 import HeaderOne from '../common/header/HeaderOne';
 import CtaLayoutOne from '../component/cta/CtaLayoutOne';
@@ -7,9 +8,17 @@ import BlogSidebar from '../component/blog/BlogSidebar';
 import BlogGridOne from '../component/blog/BlogGridOne';
 import ColorSwitcher from '../elements/switcher/ColorSwitcher';
 import SEO from '../common/SEO';
+import MagazineData from '../data/magazine/MagazineData.json';
 
+const allMagazineData = MagazineData;
 
 const BlogGridView = () => {
+
+  const params = useParams();
+  const magazineId = parseInt(params.id);
+
+  const getMagazineData = allMagazineData.filter(magazine => magazine.id === magazineId);
+  const detailsMagazine = getMagazineData[0];
 
     return (
         <>
@@ -18,7 +27,7 @@ const BlogGridView = () => {
             <main className="main-wrapper">
                 <HeaderOne />
                 <BreadCrumbOne 
-                title="Blogs"
+                title={detailsMagazine.title}
                 page="Blog"
                 />
                 <div className="section-padding-equal">
